@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.img-slides {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-slides .image-box {
+    width: 95%;
+    height: 95%;
+    position: absolute;
+}
+.img-slides .image-box .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    display: none;
+}
+.img-slides .image-box .image.active {
+    display: inline-block;
+}
+.setps-container {
+    width: 300px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.setps-container .circle {
+    width: 35px;
+    background-color: #fff;
+    border: 2px solid rgb(172, 172, 172);
+    color: rgb(172, 172, 172);
+    height: 35px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear ease;
+}
+.setps-container .circle.active {
+    border-color: dodgerblue;
+    color: dodgerblue;
+    transition: 0.3s ease-in;
+}
+.setps-container .progress {
+    width: 85%;
+    background-color: rgb(172, 172, 172);
+    z-index: -1;
+    height: 2px;
+    border-radius: 5px;
+    position: absolute;
+    transition: 0.8s ease-in-out;
+}
+
+.setps-container .progress .bar {
+    width: 0%;
+    background-color: dodgerblue;
+    z-index: -1;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.buttons {
+    width: 300px;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons button {
+    display: inline-block;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+.buttons button:disabled {
+    background-color: rgb(189, 222, 255);
+    cursor: not-allowed;
+}

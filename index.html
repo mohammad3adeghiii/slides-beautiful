@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Steps Progressbar</title>
+</head>
+<body>
+    <div class="img-slides">
+        <div class="image-box">
+            <img class="image" src="images/nature-1.jpg" alt="pic" />
+        </div>
+        <div class="image-box">
+            <img class="image" src="images/nature-2.jpg" alt="pic" />
+        </div>
+        <div class="image-box">
+            <img class="image" src="images/nature-3.jpg" alt="pic" />
+        </div>
+        <div class="image-box">
+            <img class="image active" src="images/nature-4.jpg" alt="pic" />
+        </div>
+    </div>
+    <div class="setps-container">
+        <span class="circle active">1</span>
+        <span class="circle">2</span>
+        <span class="circle">3</span>
+        <span class="circle">4</span>
+        <div class="progress">
+            <div class="bar"></div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="prev" disabled>Prev</button>
+        <button class="next">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
